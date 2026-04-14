@@ -1,0 +1,62 @@
+/* --- 東京エリア専用CSS --- */
+
+.area-badge-tokyo {
+    background: #1a2b3c; /* クールなネイビー */
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.local-hero-tokyo {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.filter-section {
+    max-width: 1000px;
+    margin: -20px auto 20px; /* ヒーローエリアに少し重ねる */
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid #eee;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    background: #1a2b3c;
+    color: #fff;
+    border-color: #1a2b3c;
+}
+
+/* チームカードの強調（東京版） */
+.area-tag-tokyo {
+    background: #007bff; /* 東京の躍動感を出すブルー */
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+.btn-more-tokyo {
+    display: block;
+    text-align: center;
+    background: #ff8c00; /* 目立つオレンジ */
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}

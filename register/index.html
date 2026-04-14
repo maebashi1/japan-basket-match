@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チーム登録 | JAPAN BASKET MATCH</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <a href="/" class="logo">JAPAN BASKET MATCH</a>
+    </div>
+</header>
+
+<main class="form-container">
+    <h2>新規チーム登録（無料）</h2>
+    <p class="form-note">以下の情報を入力して掲載を申請してください。運営が内容を確認後、掲載いたします。</p>
+
+    <form action="send.php" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>チーム名 <span class="required">必須</span></label>
+            <input type="text" name="team_name" required placeholder="例：前橋バスケフェローズ">
+        </div>
+
+        <div class="form-group">
+            <label>活動エリア <span class="required">必須</span></label>
+            <select name="pref" required>
+                <option value="">選択してください</option>
+                <option value="tokyo">東京都</option>
+                <option value="gunma">群馬県</option>
+                <option value="other">その他（全国順次拡大中）</option>
+            </select>
+            <input type="text" name="city" placeholder="市区町村（例：前橋市、渋谷区など）">
+        </div>
+
+        <div class="form-group">
+            <label>チームの特徴（複数選択可）</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="features[]" value="beginner"> 初心者歓迎</label>
+                <label><input type="checkbox" name="features[]" value="parking"> 駐車場あり</label>
+                <label><input type="checkbox" name="features[]" value="station"> 駅から徒歩10分以内</label>
+                <label><input type="checkbox" name="features[]" value="night"> 19時以降活動</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>紹介文 <span class="required">必須</span></label>
+            <textarea name="description" rows="5" required placeholder="活動頻度、レベル感、募集中のポジションなどを自由に入力してください。"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>代表者メールアドレス <span class="required">必須</span></label>
+            <input type="email" name="email" required placeholder="example@mail.com">
+        </div>
+
+        <button type="submit" class="submit-btn">掲載を申請する</button>
+    </form>
+</main>
+
+</body>
+</html>
